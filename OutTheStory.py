@@ -192,7 +192,7 @@ if st.session_state.step == 'imposter_guess':
     if st.button("Submit Imposter Guess"):
         if imposter_guess == st.session_state.word_for_in_players:
             st.success("Correct! The imposter guessed the right word.")
-            points = 200
+            points = 100
             if st.session_state.double_points_this_round:
                 points *= 2  # Double points event for imposter as well
             st.session_state.scores[st.session_state.imposter] += points
